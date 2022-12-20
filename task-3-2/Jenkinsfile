@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('Check out source code'){
             steps {
-                git branch:'master'
+                git branch:'master',
                 url: 'https://github.com/nguyenpc3/react-for-demo-1.git'
                 sh 'ls -la'
             }
